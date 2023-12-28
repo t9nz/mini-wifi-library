@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Wifi Library</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  
+  <style>
+    body {
+      max-width: max-content;
+      margin: auto;
+      display: flex;
+    }
+
+    a {
+      color:white;
+      text-decoration: none; 
+    }
+
+    .credits {
+      text-align: right;
+      margin-right: 9em; 
+      margin-top:3em; 
+      font-size: 0.85em; 
+      font-family: 'source-code-pro', monospace; 
+      color: white;
+    }
+
+    .blurb {
+      margin-left: 10em; 
+      margin-top:3em; 
+      font-size: 0.85em; 
+      font-family: 'source-code-pro', monospace; 
+      color: white;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      margin-left: 8.5em; 
+      font-size: 1em; 
+      font-family: 'source-code-pro', monospace; 
+      color: white;
+    }
+
+    .catmoji {
+      margin-top:3em; 
+      font-size: 1.2em; 
+      font-family: 'source-code-pro', monospace; 
+      color: white;
+    }
+
+    .subtitle {
+      margin-left: 7em; 
+      margin-top: -2.5em; 
+      font-size: 1.2em; 
+      font-family: 'source-code-pro', monospace; 
+      color: white;
+    }
+
+    p {
+      font-size: 2em;
+      margin-right: 0em; 
+    }
+
+    pre {
+      font-size: 0.9em;
+      white-space: pre-wrap;
+      margin-top: 1.5em;
+      color: white; 
+      margin-top:3em; 
+      font-family: 'source-code-pro', monospace
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .container pre {
+      display: inline-block;
+      text-align: left;
+    }
+
+    @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+      pre {
+        font-size: 0.23em; 
+        margin-left: -2em; 
+      }
+
+      .credits {
+        font-size: 0.43em;
+        margin-right: 6em;  
+      }
+
+      .blurb {
+        font-size: 0.6em; 
+        margin-left: 4.8em; 
+        margin-right: 3em; 
+      }
+
+      .visible {
+        display:none;
+      }
+
+      .subtitle {
+        font-size: 0.9em; 
+        margin-left: 3.3em; 
+        margin-top: -1.5em; 
+      }
+
+      .text {
+        font-size: 0.85em; 
+        margin-left: 3.6em; 
+      }
+
+      .catmoji {
+        display: none; 
+      }
+    }
+
+    @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+    pre {
+      font-size: 0.5em; 
+    }
+
+    .credits {
+      margin-right: 5em; 
+      font-size: 0.6em; 
+    }
+  }
+  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    pre {
+      font-size: 0.8em; 
+      margin-right: 4.em; 
+    }
+
+    .credits {
+      font-size: 0.9em; 
+      margin-top: 1em; 
+    }
+
+    .blurb {
+      font-size: 0.9em; 
+    }
+
+    .text {
+      font-size: 1.2em; 
+    }
+
+    .subtitle {
+      font-size: 1.2em; 
+      margin-left: 3.5em; 
+    }
+  }
+
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .visible {
+        display: inline;
+      }
+  }
+  </style>
+</head>
+<body style="background-color: #302C2C;"></body>
+    <div class="header">
+        <div class="text">
+            <p>
+                <strong>mini wifi library</strong>
+            </p>
+            <pre class="catmoji">
+              /\_/\
+             ( o.o )
+              > ^ &lt;
+          </pre>
+        </div>
+        <p class="subtitle">
+          running on the WEMOS D1 Mini ESP8266
+        </p>
+        <p class="blurb">
+          you took a chance on this mysterious wifi captive portal and found a cool hidden <br class="visible">
+          wifi library. all books are public domain, click on a book title to read it :-&rpar;
+        </p>
+        <div class="container">
+        <pre>
+                         .--.                    .---.
+                   .-----|__|            .-.     |~~~|         .--.        .---.        .-.
+                .--|=====|--|_           |_|     |<a href="erewhon.html"> E </a>|--.  .---|--|   .-.  |<a href="candide.html"> C </a>|  .---. |~|    .--.
+                |%%|=====|  |'\      .---!~|  .--|<a href="erewhon.html"> r </a>|--|--|===|<a href="the-prince.html">Th</a>|---|_|--|<a href="candide.html"> a </a>|--|:::| |~|-==-|==|
+                |  |<a href="metamorphosis.html"> The</a> |  |.'\     |===| |--|%%|<a href="emma.html"> e </a>|  |%%|   |<a href="the-prince.html">e </a>|===| |~~|<a href="candide.html"> n </a>|--|   |_|~|<a href="romeo-juliet.html">Rome</a>|  |
+                |  |<a href="metamorphosis.html"> Meta</a>|  |\.'\    |<a href="aesops-fables.html">Aes</a>| |__|  |<a href="erewhon.html"> w </a>|  |  |   |<a href="the-prince.html">  </a>|===| |==|<a href="candide.html"> d </a>|  |:::|=| |<a href="romeo-juliet.html">e & </a>|  |
+                |  |<a href="metamorphosis.html"> morp</a>|  | \  \   |<a href="aesops-fables.html">ops</a>| |==|  |<a href="erewhon.html"> h </a>|  |  |   |<a href="the-prince.html">Pr</a>|===| |==|<a href="candide.html"> i </a>|  |:::|=| |<a href="romeo-juliet.html">Juli</a>|  |
+                |  |<a href="metamorphosis.html"> hosi</a>|  |  \.'\  |<a href="aesops-fables.html">Fab</a>|_|__|  |<a href="erewhon.html"> o </a>|  |  |   |<a href="the-prince.html">in</a>|===| |==|<a href="candide.html"> d </a>|  |:::|=| |<a href="romeo-juliet.html">et  </a>|  |
+                |  |<a href="metamorphosis.html">  s  </a>|__|   \  \ |<a href="aesops-fables.html">les</a>| |  |  |<a href="erewhon.html"> n </a>|  |  |   |<a href="the-prince.html">ce</a>|===| |==|<a href="candide.html"> e </a>|  |:::|=| |    |  |
+                |%%|=====|--|    \.'\|===|~|--|%%|~~~|--|~~|===|--|===|~|~~|~~~|--|:::|=|~|----|==|
+                ^--^-----'--^     `-'`---^-^--^--^---'--'--^---'--^---^-^--^---'--^---^-^-^-==-^--^                
+        </pre> 
+        </div>
+        <p class="credits">
+                text from gutenberg.org | ascii art from ASCII Art Archive | made with ♥ by t9nz
+        </p>
+    </div>
+</body>
+</html>
