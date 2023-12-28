@@ -46,3 +46,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Inspiration, code snippets, etc.
 * [readme-template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
 * [Iffy-Books](https://iffybooks.net)
+* [ascii-art](https://www.asciiart.eu/)
+* [text](https://gutenberg.org)
