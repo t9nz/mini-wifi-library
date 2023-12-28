@@ -9,7 +9,7 @@ network that pops up when you try to connect. Some captive portals show advertis
 you for your email information, only a few are a secret mini wifi library stocked with classic public 
 domain books for you to read. 
 
-![mini-wifi-library]("mini-wifi-library.jpeg") 
+![mini-wifi-library]("https://github.com/t9nz/mini-wifi-library/blob/main/mini-wifi-library.jpeg?raw=true") 
 
 ## Getting Started
 
